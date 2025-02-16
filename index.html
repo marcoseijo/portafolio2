@@ -5,32 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio - Marcos Eijo</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Fira+Code&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>¡Hola, soy [Marcos Eijo]!</h1>
-        <p>Diseñador web y desarrollador front-end</p>
+        <h1 id="titulo">¡Hola, soy Marcos Eijo!</h1>
+        <p>Profesor de Informática y Matemáticas</p>
     </header>
+
+    <!-- Menú de navegación -->
     <nav>
         <ul>
-            <li><a href="#proyectos">Mis Proyectos</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#proyectos">Mis Clases</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
-    <section id="proyectos">
-        <h2>Mis Proyectos</h2>
-        <div>
-            <h3>Proyecto 1</h3>
-
-            <img src="images\imagen1.webp" alt="Un ordenador en una mesa de oficina">
-            
-            <p>Descripción del proyecto 1.</p>
-            <a href="enlace-al-proyecto1">Ver Proyecto</a>
-        </div>
-        <!-- Añade más proyectos aquí -->
+    
+    <!-- Sección sobre mí -->
+    <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <img src="images/sobremi.jpg" alt="Foto de Marcos Eijo" class="perfil">
+        <p>Soy un apasionado de la docencia y la informática. Me encanta crear experiencias educativas atractivas y funcionales.</p>
     </section>
+    
+    <!-- Sección de proyectos -->
+    <section id="proyectos">
+        <h2>Mis Clases</h2>
+        <div class="galeria">
+            <div class="proyecto">
+                <h3>SOR</h3>
+                <img src="images/imagen1.webp" alt="Un ordenador en una mesa de oficina">
+                <p>Descripción del proyecto 1.</p>
+                <a href="enlace-al-proyecto1" class="btn">Ver Clases</a>
+            </div>
+            <div class="proyecto">
+                <h3>DIW</h3>
+                <img src="images/diw.png" alt="Un logo de CSS sobre fondo rojo">
+                <p>Descripción del proyecto 2.</p>
+                <a href="enlace-al-proyecto2" class="btn">Ver Clases</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
     <footer>
-        <p>© 2024 [Marcos Eijo]. Todos los derechos reservados.</p>
+        <p>© 2024 Marcos Eijo. Todos los derechos reservados.</p>
+        <div class="social">
+            <a href="#"><img src="images/icon-facebook.svg" alt="Facebook"></a>
+        </div>
     </footer>
 </body>
 </html>

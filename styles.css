@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Estilo base */
+body {
+    font-family: 'Press Start 2P', cursive; /* Estilo de consola retro */
+    background-color: #000000; /* Fondo oscuro */
+    color: #00FF00; /* Texto en verde neón */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Encabezado */
+header {
+    background-color: #000000; /* Fondo negro */
+    color: #00FF00; /* Texto en verde neón */
+    padding: 50px;
+    text-align: center;
+    font-size: 3.2em;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    border-bottom: 2px solid #00FF00; /* Línea verde neón */
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Menú de navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #333333; /* Gris oscuro para el fondo */
+    border-top: 2px solid #00FF00; /* Línea verde neón */
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #00FF00; /* Verde neón */
+    font-size: 1.3em;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #00FF00; /* Fondo verde neón al pasar el ratón */
+    color: #000000; /* Texto negro cuando el fondo es verde */
+    transform: scale(1.1); /* Efecto zoom agresivo */
+}
+
+/* Sección Sobre mí */
+#sobre-mi {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #000000; /* Fondo negro */
+    color: #00FF00; /* Texto verde neón */
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);
+    animation: slideInUp 1s ease-out;
+}
+
+#sobre-mi img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #00FF00; /* Borde verde neón */
+    transition: transform 0.3s ease-in-out;
+}
+
+#sobre-mi img:hover {
+    transform: scale(1.1); /* Efecto zoom fuerte */
+}
+
+#sobre-mi p {
+    font-size: 1.2em;
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeIn 1s 0.5s forwards;
+}
+
+/* Sección Proyectos */
+#proyectos {
+    padding: 60px 20px;
+    background-color: #000000; /* Fondo negro */
+    text-align: center;
+}
+
+#proyectos h2 {
+    font-size: 2em;
+    color: #00FF00; /* Título en verde neón */
+    margin-bottom: 30px;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.proyecto {
+    background: #222222; /* Fondo oscuro para los proyectos */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    width: 300px;
+}
+
+.proyecto:hover {
+    transform: translateY(-10px); /* Levantamiento al pasar el ratón */
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.proyecto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.proyecto h3 {
+    font-size: 1.5em;
+    color: #00FF00; /* Título en verde neón */
+    font-weight: 600;
+}
+
+/* Botón */
+.btn {
+    padding: 12px 30px;
+    background-color: #00FF00; /* Botón verde neón */
+    color: black;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #000000; /* Fondo negro al pasar el ratón */
+    color: #00FF00; /* Texto verde neón */
+    transform: scale(1.1); /* Aumento al pasar el cursor */
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: #000000; /* Fondo negro */
+    color: #00FF00; /* Texto verde neón */
+    text-align: center;
+    font-size: 0.9em;
+    border-top: 2px solid #00FF00; /* Línea verde neón */
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideInUp {
+    0% { transform: translateY(30px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
