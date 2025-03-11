@@ -221,3 +221,45 @@ footer::after {
     0% { transform: translateY(30px); opacity: 0; }
     100% { transform: translateY(0); opacity: 1; }
 }
+
+/* Estilos para la sección de descargas */
+#descargas {
+    background-color: #fff;  /* Fondo blanco para que combine con la estructura */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 40px auto;
+    text-align: center;
+    border: 2px solid #f1f1f1;  /* Borde sutil */
+}
+
+#descargas h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #333;  /* Color del texto */
+}
+
+#descargas p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #555;  /* Color del texto */
+}
+
+/* Estilos para el botón */
+#descargas button {
+    background-color: #007bff;  /* Azul similar a otros botones */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;  /* Efecto de transición */
+}
+
+#descargas button:hover {
+    background-color: #0056b3;  /* Azul más oscuro para el hover */
+    transform: scale(1.05);  /* Efecto de aumento al pasar el cursor */
+}
+
